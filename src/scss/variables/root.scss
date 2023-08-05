@@ -1,11 +1,13 @@
 body {
-	--font-editor-theme:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Inter,Ubuntu,sans-serif;
-	--font-editor:var(--font-editor-override), var(--font-text-override), var(--font-editor-theme);
+	--font-editor-theme: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+		Inter, Ubuntu, sans-serif;
+	--font-editor: var(--font-editor-override), var(--font-text-override),
+		var(--font-editor-theme);
 }
 
 body {
 	/* Blockquotes */
-	--blockquote-style:normal;
+	--blockquote-style: normal;
 	--blockquote-color: var(--text-muted);
 	--blockquote-border-thickness: 1px;
 	--blockquote-border-color: var(--quote-opening-modifier);
@@ -24,12 +26,12 @@ body {
 	/* Headings */
 	--inline-title-margin-bottom: 1rem;
 
-	--h1-size: 1.125em;
-	--h2-size: 1.05em;
-	--h3-size: 1em;
-	--h4-size: 0.90em;
-	--h5-size: 0.85em;
-	--h6-size: 0.85em;
+	--h1-size: 1.875rem;
+	--h2-size: 1.5rem;
+	--h3-size: 1.25rem;
+	--h4-size: 1.125rem;
+	--h5-size: 1.125rem;
+	--h6-size: 1rem;
 
 	--h1-weight: 600;
 	--h2-weight: 600;
@@ -53,16 +55,16 @@ body {
 	--h6-style: normal;
 
 	/* Line widths */
-	--line-width: 40rem;
+	--line-width: 60rem;
 	--line-height: 1.5;
-	--max-width: 88%;
+	--max-width: 90%;
 	--max-col-width: 18em;
 
 	/* Icons */
 	--icon-muted: 0.5;
 
 	/* Quotes and transclusions */
-	--nested-padding:1.1em;
+	--nested-padding: 1.1em;
 
 	/* Lists */
 	--folding-offset: 32px;
@@ -81,10 +83,10 @@ body {
 	--mobile-left-sidebar-width: 280pt;
 	--mobile-right-sidebar-width: 240pt;
 
-	--top-left-padding-y:0px;
+	--top-left-padding-y: 0px;
 
 	/* Image opacity in dark mode */
-	--image-muted:0.7;
+	--image-muted: 0.7;
 	--image-radius: 0;
 
 	/* Spacing */
@@ -99,10 +101,11 @@ body {
 }
 
 .mod-macos {
-	--top-left-padding-y:24px;
+	--top-left-padding-y: 24px;
 }
 
-@media only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (min-device-pixel-ratio: 2) {
+@media only screen and (-webkit-min-device-pixel-ratio: 2),
+	only screen and (min-device-pixel-ratio: 2) {
 	.is-phone {
 		--border-width: 0.75px;
 	}

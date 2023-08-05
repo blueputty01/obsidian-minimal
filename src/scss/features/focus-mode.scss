@@ -3,11 +3,10 @@
 
 /* Hide app ribbon */
 .workspace-ribbon.mod-left {
-	border-left:0;
-	transition:none;
+	border-left: 0;
+	transition: none;
 }
 .minimal-focus-mode {
-
 	&.is-translucent .workspace-ribbon.mod-left.is-collapsed,
 	&.is-translucent .workspace-ribbon.mod-left.is-collapsed:before {
 		background-color: var(--background-primary) !important;
@@ -22,7 +21,7 @@
 		background-color: var(--background-primary);
 		&:before {
 			background-color: var(--background-primary);
-			border-color:transparent;
+			border-color: transparent;
 		}
 		.side-dock-actions,
 		.side-dock-settings {
@@ -38,7 +37,7 @@
 		}
 	}
 	&.borders-title .workspace-ribbon.mod-left.is-collapsed {
-		border-right:none;
+		border-right: none;
 	}
 
 	/* Hide right sidebar button */
@@ -47,19 +46,18 @@
 	}
 
 	/* Hide status bar */
-	&:not(.minimal-status-off) .status-bar {
-		opacity: 0;
-		transition:opacity 0.2s ease-in-out;
-	}
-	.status-bar:hover {
-		opacity: 1;
-		transition:opacity 0.2s ease-in-out;
-	}
-
+	// &:not(.minimal-status-off) .status-bar {
+	// 	opacity: 0;
+	// 	transition: opacity 0.2s ease-in-out;
+	// }
+	// .status-bar:hover {
+	// 	opacity: 1;
+	// 	transition: opacity 0.2s ease-in-out;
+	// }
 
 	.mod-root .workspace-tabs {
 		position: relative;
-		
+
 		&:before:hover {
 			background-color: blue;
 		}
@@ -101,14 +99,22 @@
 		}
 	}
 
-	&.mod-macos:not(.is-fullscreen) .workspace:not(.is-left-sidedock-open) .mod-root .workspace-tabs.mod-stacked .workspace-tab-container .workspace-tab-header-inner {
+	&.mod-macos:not(.is-fullscreen)
+		.workspace:not(.is-left-sidedock-open)
+		.mod-root
+		.workspace-tabs.mod-stacked
+		.workspace-tab-container
+		.workspace-tab-header-inner {
 		padding-top: 30px;
 	}
-
 }
 
 /* Collapse pane header */
-body.show-view-header  .app-container .workspace-split.mod-root > .workspace-leaf .view-header {
+body.show-view-header
+	.app-container
+	.workspace-split.mod-root
+	> .workspace-leaf
+	.view-header {
 	transition: height 0.1s linear 0.1s;
 }
 body.minimal-focus-mode.show-view-header {
@@ -125,22 +131,23 @@ body.minimal-focus-mode.show-view-header {
 		z-index: -9;
 		top: 0;
 	}
-	.view-header-nav-buttons,
-	.view-header-title-container,
-	.view-actions {
-		opacity: 0;
-		transition: all 0.1s linear 0.5s;
-	}
-	.mod-root .workspace-tab-header-container:hover ~ .workspace-tab-container .view-header,
+	.mod-root
+		.workspace-tab-header-container:hover
+		~ .workspace-tab-container
+		.view-header,
 	.mod-root .workspace-leaf .view-header:hover,
 	.mod-root .workspace-leaf .view-header:focus-within {
 		height: calc(var(--header-height) + 2px);
 		transition: all 0.1s linear 0.1s;
 	}
-	.mod-root .workspace-tab-header-container:hover ~ .workspace-tab-container .view-header,
+	.mod-root
+		.workspace-tab-header-container:hover
+		~ .workspace-tab-container
+		.view-header,
 	.view-header:hover,
 	.view-header:focus-within {
-		.view-header-nav-buttons,,
+		.view-header-nav-buttons,
+		,
 		.view-actions,
 		.view-header-title-container {
 			opacity: 1;
@@ -148,6 +155,6 @@ body.minimal-focus-mode.show-view-header {
 		}
 	}
 	.view-content {
-		height:100%;
+		height: 100%;
 	}
 }
