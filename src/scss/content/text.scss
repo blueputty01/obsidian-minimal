@@ -1,17 +1,51 @@
 /* Headings and fonts */
 
-h1,h2,h3,h4 {letter-spacing:-0.02em;} 
+h1,
+h2,
+h3,
+h4 {
+	letter-spacing: -0.02em;
+}
 
-body, input, button  {
-	font-family:var(--font-interface);
+.markdown-source-view {
+	:not(.cm-active) {
+		.cm-header {
+			position: relative;
+		}
+		.cm-header::before {
+			position: absolute;
+			left: -0.7rem;
+			top: -0.5em;
+			font-size: 1.8em;
+			opacity: 0.15;
+		}
+		.cm-header-1::before {
+			content: "#";
+		}
+		.cm-header-2::before {
+			content: "##";
+		}
+		.cm-header-3::before {
+			content: "###";
+		}
+		.cm-header-4::before {
+			content: "####";
+		}
+	}
+}
+
+body,
+input,
+button {
+	font-family: var(--font-interface);
 }
 .cm-s-obsidian span.cm-error {
-	color:var(--color-red);
+	color: var(--color-red);
 }
 .markdown-preview-view,
 .popover,
-.workspace-leaf-content[data-type=markdown] {
-	font-family:var(--font-text)
+.workspace-leaf-content[data-type="markdown"] {
+	font-family: var(--font-text);
 }
 
 body,
@@ -31,5 +65,5 @@ body,
 }
 
 .cm-s-obsidian span.cm-formatting-task {
-	line-height:var(--line-height);
+	line-height: var(--line-height);
 }
