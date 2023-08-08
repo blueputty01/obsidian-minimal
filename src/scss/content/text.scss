@@ -8,16 +8,17 @@ h4 {
 }
 
 .markdown-source-view {
-	:not(.cm-active) {
+	.HyperMD-header:not(.cm-active) {
 		.cm-header {
 			position: relative;
 		}
 		.cm-header::before {
+			z-index: -1;
 			position: absolute;
 			left: -0.7rem;
-			top: -0.5em;
-			font-size: 1.8em;
-			opacity: 0.15;
+			top: -0.3em;
+			font-size: 1.2em;
+			opacity: 0.2;
 		}
 		.cm-header-1::before {
 			content: "#";
