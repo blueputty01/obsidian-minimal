@@ -148,17 +148,12 @@ body .dataview.inline-field-value {
 	min-width: 2rem;
 }
 
-// project
-.action-view tbody > tr > td:nth-last-child(6) {
-	min-width: 7rem;
-}
+// // date
+// .action-view tbody > tr > td:nth-last-child(4) {
+// 	min-width: 3rem;
+// }
 
-// date
-.action-view tbody > tr > td:nth-last-child(4) {
-	min-width: 8rem;
-}
-
-// context
-.action-view tbody > tr > td:nth-last-child(3) {
-	min-width: 5rem;
-}
+// // context
+// .action-view tbody > tr > td:nth-last-child(2) {
+// 	min-width: 3rem;
+// }

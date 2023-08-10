@@ -333,8 +333,8 @@ table.dataview {
 	}
 
 	/* Charts */
-	div:has(>.block-language-dataviewjs canvas), 
-	div:has(>.block-language-chart) {
+	div:has(> .block-language-dataviewjs canvas),
+	div:has(> .block-language-chart) {
 		width: var(--container-chart-width);
 		max-width: var(--container-chart-max-width);
 
@@ -365,3 +365,4 @@ table.dataview {
 		}
 	}
 }
+
