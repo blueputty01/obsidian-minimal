@@ -140,21 +140,55 @@ body .dataview.inline-field-value {
 	font-size: var(--font-adaptive-small);
 }
 
-.action-view tbody > tr > td:first-child {
-	width: 100%;
-}
+.action-view {
+	tbody > tr > td:first-child {
+		min-width: 5rem;
+		width: 100%;
+	}
 
-.action-view tbody > tr > td:not(:first-child) {
-	min-width: 2rem;
-}
+	tbody > tr > td {
+		min-width: 0 !important;
+		// https://stackoverflow.com/questions/26292408/why-does-this-behave-the-way-it-does-with-max-width-0
+		max-width: 0 !important;
+	}
 
-.action-view table {
-	width: 40rem !important;
-	min-width: 40rem !important;
-	margin-inline-start: auto !important;
-	margin-inline-end: auto !important;
-}
+	table {
+		margin-inline-start: auto !important;
+		margin-inline-end: auto !important;
+	}
 
+	td,
+	th {
+		padding-left: 0.1rem !important;
+		padding-right: 0.1rem !important;
+	}
+
+	.block-language-dataviewjs {
+		width: 100%;
+		overflow: hidden;
+
+		p {
+			width: 100% !important;
+			overflow-wrap: break-word;
+		}
+
+		span {
+			width: 100%;
+			overflow-wrap: break-word;
+		}
+
+		div {
+			width: 100%;
+			overflow-x: auto;
+		}
+	}
+
+	table {
+		width: 100%;
+		max-width: 35rem !important;
+		min-width: 10rem !important;
+	}
+}
 // // date
 // .action-view tbody > tr > td:nth-last-child(4) {
 // 	min-width: 3rem;
