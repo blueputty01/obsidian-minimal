@@ -83,9 +83,9 @@ body div.dataview-error-box {
 	}
 }
 
-.block-language-dataviewjs:has(.dataview-error-box) table.dataview {
-	display: none;
-}
+// .block-language-dataviewjs:has(.dataview-error-box) table.dataview {
+// 	display: none;
+// }
 
 /* Trim columns feature */
 .trim-cols .markdown-source-view.mod-cm6 .table-view-table > tbody > tr > td,
@@ -146,6 +146,13 @@ body .dataview.inline-field-value {
 
 .action-view tbody > tr > td:not(:first-child) {
 	min-width: 2rem;
+}
+
+.action-view table {
+	width: 40rem !important;
+	min-width: 40rem !important;
+	margin-inline-start: auto !important;
+	margin-inline-end: auto !important;
 }
 
 // // date
