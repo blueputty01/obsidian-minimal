@@ -141,15 +141,27 @@ body .dataview.inline-field-value {
 }
 
 .action-view {
-	tbody > tr > td:first-child {
-		min-width: 5rem;
-		width: 100%;
-	}
+	tbody,
+	thead {
+		tr {
+			td:first-child {
+				width: 100%;
+			}
+			td {
+				min-width: 0 !important;
+				// https://stackoverflow.com/questions/26292408/why-does-this-behave-the-way-it-does-with-max-width-0
+				max-width: 0 !important;
+			}
 
-	tbody > tr > td {
-		min-width: 0 !important;
-		// https://stackoverflow.com/questions/26292408/why-does-this-behave-the-way-it-does-with-max-width-0
-		max-width: 0 !important;
+			td:nth-child(2),
+			th:nth-child(2) {
+				min-width: 7rem !important;
+
+				@media (max-width: 800px) {
+					display: none;
+				}
+			}
+		}
 	}
 
 	table {
@@ -174,6 +186,7 @@ body .dataview.inline-field-value {
 
 		span {
 			width: 100%;
+			line-height: initial;
 			overflow-wrap: break-word;
 		}
 
