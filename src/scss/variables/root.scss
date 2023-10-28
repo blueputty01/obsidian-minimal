@@ -76,6 +76,7 @@ body {
 	--header-height: 40px;
 
 	/* Metadata */
+	--metadata-label-width: 9rem;
 	--metadata-label-font-size: var(--font-adaptive-small);
 	--metadata-input-font-size: var(--font-adaptive-small);
 
@@ -86,8 +87,8 @@ body {
 	--top-left-padding-y: 0px;
 
 	/* Image opacity in dark mode */
-	--image-muted: 0.7;
-	--image-radius: 0;
+	--image-muted:0.7;
+	--image-radius: 4px;
 
 	/* Spacing */
 	--heading-spacing: 2em;
@@ -102,6 +103,12 @@ body {
 
 .mod-macos {
 	--top-left-padding-y: 24px;
+}
+
+.is-phone {
+	/* Metadata */
+	--metadata-label-font-size: var(--font-adaptive-smaller);
+	--metadata-input-font-size: var(--font-adaptive-smaller);
 }
 
 @media only screen and (-webkit-min-device-pixel-ratio: 2),
